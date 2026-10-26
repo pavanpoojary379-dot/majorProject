@@ -8,7 +8,7 @@ Start-Process -FilePath "cmd.exe" -ArgumentList "/k cd backend && .\venv\Scripts
 
 # Start Frontend
 Write-Host "Starting Frontend on http://localhost:5173 ..." -ForegroundColor Yellow
-Start-Process -FilePath "cmd.exe" -ArgumentList "/k cd frontend && npm run dev -- --host 127.0.0.1 --port 5173"
+Start-Process -FilePath "cmd.exe" -ArgumentList "/k cd frontend && npm run dev"
 
 # Open browser
 Start-Sleep -Seconds 2
